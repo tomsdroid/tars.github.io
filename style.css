@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (min-width:370px){
+    .main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: #2F3645;
+        justify-content: center;
+        overflow: hidden;
+        position: absolute;
+    }
+    .main-bg{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+    }
+    .rect{
+        width: 150px;
+        height: 150px;
+        top: -10%;
+        right: 15%;
+        background: #36BA98;
+        position: absolute;
+        transform: scale(2) rotate(45deg);
+        border-radius: 10px;
+        box-shadow: inset 0 -5px 10px rgba(0, 0, 0, .5), -5px 10px 10px rgba(0, 0, 0, .5);
+    }
+    .rect2{
+        width: 150px;
+        height: 150px;
+        left: -23%;
+        bottom: -12%;
+        z-index: 1;
+        background: #E66E51;
+        position: absolute;
+        transform: scale(4) rotate(45deg);
+        border-radius: 10px;
+        box-shadow: inset 0 5px 10px rgba(0, 0, 0, .5);
+    }
+    .rect3{
+        width: 150px;
+        height: 150px;
+        right: -20%;
+        bottom: -5%;
+        background: #E9C46A;
+        position: absolute;
+        transform: scale(4) rotate(45deg);
+        border-radius: 10px;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+    }
+    .rect4{
+        width: 150px;
+        height: 150px;
+        right: -20%;
+        bottom: -15%;
+        background: #F4A261;
+        position: absolute;
+        transform: scale(4) rotate(45deg);
+        border-radius: 10px;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+    }
+    /* Card Quotes Style */
+    .card-quotes{
+        width: 100%;
+        height: 75%;
+        padding: 15px;
+        display: none;
+        justify-content: center;
+        position: absolute;
+        /* transform: translateY(200%); */
+        z-index: 1;
+    }
+    .card-quotes .quotes{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        position: relative;
+        background: url('./bibah.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .card-quotes .quotes::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0, .4));
+    }
+    .card-quotes .quotes .card-head{
+        position: absolute;
+        z-index: 1;
+    }
+    .card-quotes .quotes .card-head .head-quotes{
+        color: palevioletred;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    .card-quotes .quotes .card-head .head-quotes span{
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 40px;
+        opacity: 75%;
+    }
+    .card-quotes .quotes .card-head .head-quotes span::before{
+        content: '';
+        width: 30px;
+        height: 3px;
+        top: 22px;
+        left: 10px;
+        background-color: whitesmoke;
+        position: absolute;
+    }
+    .card-quotes .quotes .card-body{
+        width: 95%;
+        height: 100%;
+        margin-top: 23%;
+        padding: 0 15px;
+        backdrop-filter: blur(2.5px);
+        position: absolute;
+        overflow: hidden;
+        text-align: justify;
+    }
+    .card-quotes .quotes .card-body .greets{
+        font-size: 12px;
+    }
+    .opCard{
+        width: 150px;
+        height: 150px;
+        padding: 8px 12px;
+        border-radius: 50%;
+        border: none;
+        transform: scale(2);
+        background: linear-gradient(45deg, #043ade, #43ade9);
+        box-shadow: 5px 5px 15px rgba(0,0,0, .4), inset -5px -5px 10px rgba(0, 0, 0, .4);
+    }
+    .opCard:active{
+        color: red;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .4);
+    }
+    .opCard h1{
+        color: rgba(0, 0, 0, .4);
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+}
+
+.slideUp{
+    animation: .5s slideUp ease-in;
+}
+@keyframes slideUp{
+    0%{transform: translateY(200%);}
+    100%{transform: translateY(0%);}
+}
